@@ -1,0 +1,400 @@
+* {
+	box-sizing: border-box;
+	font-family: "Hind", sans-serif;
+	font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Montserrat", sans-serif;
+	font-size: 20px;
+}
+/* LOGO COMO H1 CON TEXTO OCULTO */
+#logo {
+	width: 94.8638px;
+	height: 36.1242px;
+	background: url(../images/logo-02.svg) no-repeat center;
+	font-size: 0;
+	z-index: 1070;
+	margin: auto;
+}
+/* HEADER */
+header {
+	background-color: white;
+	padding: 20px;
+}
+header nav ul {
+	display: none;
+}
+.fa-bars {
+	position: absolute;
+	font-size: 20px;
+}
+.mobile-icons {
+	position: absolute;
+	right: 7px;
+}
+.mobile-icons i {
+	padding-right: 10px;
+	font-size: 20px;
+}
+.header-mobile {
+	display: flex;
+	align-items: center;
+}
+
+/* ACÁ ARRANCA EL MAIN, TODO LO DE ACA ADENTRO PERTENECE AL INDEX.HTML */
+/* SECCIÓN DONDE VA VIDEO  */
+.video-container {
+	background-color: #8cc0d6;
+	height: 100vh;
+	color: white;
+}
+
+.video-container h2 {
+	position: absolute;
+	bottom: 70px;
+	padding: 20px;
+	text-transform: uppercase;
+}
+.video-container p {
+	position: absolute;
+	bottom: -10px;
+	padding: 20px;
+}
+/*  SECCIÓN DE CARTAS, solo una por el momento en mobile, hasta que veamos como hacer lo del swipe*/
+.articles-presentation h3:first-child {
+	margin: 20px;
+}
+.articles-presentation p {
+	margin: 20px;
+}
+.card {
+	max-width: 430px;
+	width: 80%;
+	margin: auto;
+	border-radius: 10px;
+	box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.75);
+}
+
+.card h3 {
+	margin: 20px;
+	text-align: center;
+	font-size: 23px;
+}
+.card p {
+	margin: 12px;
+	text-align: center;
+}
+.card-rating {
+	text-align: center;
+	color: #eb8a2f;
+	margin-top: 12px;
+}
+.card-price {
+	text-align: center;
+	font-size: 32px;
+	font-weight: 700;
+	font-family: "Montserrat", sans-serif;
+}
+.card-background {
+	background-color: #c2c1c1;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	height: 115px;
+}
+.card-buttons {
+	padding-bottom: 12px;
+}
+button {
+	cursor: pointer;
+}
+.card-buy,
+.card-cart {
+	padding: 10px;
+	display: block;
+	margin: 20px auto;
+	width: 80%;
+	border: none;
+	color: white;
+	border-radius: 5px;
+	font-weight: 500;
+	font-family: "Montserrat", sans-serif;
+}
+
+.card-buy {
+	background-color: #8cc0d6;
+	border: 3px solid #8cc0d6;
+}
+.card-cart {
+	background-color: #fff;
+	border: 3px solid #8cc0d6;
+	color: #8cc0d6;
+}
+.card-cart i {
+	padding-right: 10px;
+}
+
+.article-card-2,
+.article-card-3 {
+	display: none;
+}
+
+/* SECCIÓN SOBRE NOSOTROS, por el momento con una sola imagen*/
+.about-us {
+	text-align: center;
+}
+.about-us img {
+	margin: auto;
+	display: block;
+}
+.about-us h4 {
+	padding-top: 20px;
+	font-weight: 700;
+}
+.about-us p {
+	margin: 15px;
+}
+/* SECCIÓN DE COMENTARIOS, por el momento con solo uno en mobile hasta ver como hacer el swipe */
+.experiences {
+	text-align: center;
+}
+.experience-card-2,
+.experience-card-3 {
+	display: none;
+}
+.exp-card {
+	width: 80%;
+	margin: auto;
+	border-radius: 10px;
+	box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.75);
+	padding: 5px;
+}
+
+.exp-card p:first-child {
+	font-family: "Montserrat", sans-serif;
+	text-align: left;
+	font-weight: 700;
+	padding: 5px;
+}
+.exp-card p:last-child {
+	text-align: left;
+	padding: 5px;
+}
+/* LE DI UN MARGIN AL MAIN PARA QUE NO QUEDE TAN PEGADO AL FOOTER */
+main {
+	margin-bottom: 50px;
+}
+/* ACÁ TERMINA EL MAIN DEL INDEX.HTML */
+/* SECCIÓN DEL FOOTER */
+footer {
+	background-color: #707070;
+	padding-bottom: 1px;
+	color: white;
+}
+.footer-social {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px 50px;
+	padding-top: 20px;
+}
+.footer-social i {
+	font-size: 30px;
+}
+footer nav ul li {
+	list-style-type: none;
+}
+.rights {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+footer nav {
+	display: flex;
+	justify-content: space-evenly;
+}
+.footer-izq,
+.footer-der {
+	width: 50%;
+	padding-inline-start: 0px;
+}
+.footer-izq li,
+.footer-der li {
+	margin: 10px;
+	padding: 10px 30px 10px 30px;
+}
+.footer-der {
+	text-align: right;
+}
+.rights p {
+	margin-right: 5px;
+}
+/* MEDIA QUERY PARA TABLET */
+
+@media (min-width: 769px) {
+	/*HEADER*/
+	i.fas.fa-bars,
+	.mobile-icons {
+		display: none;
+	}
+	header {
+		padding: 10px 20px;
+	}
+	header nav {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: nowrap;
+	}
+	header nav ul {
+		display: flex;
+		padding-inline-start: 0px;
+	}
+	.nav-izq,
+	.nav-der {
+		display: flex;
+		justify-content: space-between;
+		width: 35%;
+	}
+	header nav ul li {
+		list-style: none;
+		margin: 10px;
+	}
+	header nav ul li a {
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+	header nav ul li a:visited {
+		color: black;
+		text-decoration: none;
+	}
+	/* ARRANCA EL MAIN */
+	/* SECCION DONDE VA VIDEO */
+	.video-container h2 {
+		font-size: 30px;
+	}
+	/* SECCION DE CARTAS */
+	.articles-presentation {
+		text-align: center;
+	}
+	.articles-presentation h3:first-child {
+		margin: 20px;
+		text-transform: uppercase;
+		padding-top: 20px;
+		font-weight: 700;
+		font-size: 35px;
+	}
+	.articles-presentation p {
+		margin: 20px;
+		padding: 20px;
+	}
+
+	.article-group {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-evenly;
+	}
+	.card {
+		display: inline-block;
+		max-width: 30vw;
+		margin: initial;
+	}
+	.card-price {
+		font-size: 40px;
+	}
+
+	/* SECCION SOBRE NOSOTROS*/
+	.about-us h4 {
+		text-transform: uppercase;
+		font-size: 35px;
+	}
+
+	.about-us p {
+		margin: 25px;
+	}
+	.about-us h5 {
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 25px;
+	}
+	/* SECCION EXPERIENCIAS */
+
+	.exp-container {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-evenly;
+	}
+	.experiences h4 {
+		font-size: 35px;
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+	.exp-card {
+		display: inline-block;
+		width: 30%;
+		max-width: 350px;
+		margin: initial;
+	}
+	/*FOOTER*/
+	.footer-social {
+		width: 30%;
+		max-width: 335px;
+		margin: auto;
+		padding-bottom: 50px;
+	}
+	.footer-social i {
+		font-size: 30px;
+	}
+	footer nav {
+		display: none;
+	}
+}
+/* MEDIA QUERY PARA DESKTOP */
+
+@media (min-width: 1220px) {
+	/* SECCION DE TARJETAS*/
+	.card {
+		min-width: 365px;
+		max-width: 25vw;
+	}
+	.card-price {
+		font-size: 50px;
+	}
+	.card-buy,
+	.card-cart {
+		display: inline-block;
+		width: 45%;
+	}
+
+	/* SECCION SOBRE NOSOTROS */
+	.about-us {
+		height: 300px;
+	}
+	.about-us h5 {
+		margin: 20px 0px 20px 0px;
+		padding-top: 20px;
+	}
+	.about-us p {
+		width: 80%;
+		margin: initial;
+	}
+	.about-us-container {
+		width: 65%;
+		float: right;
+		text-align: left;
+		height: 200px;
+	}
+	.about-us img {
+		float: right;
+	}
+	.about-us-img {
+		display: block;
+		width: 35%;
+		float: left;
+		padding-right: 10px;
+	}
+}

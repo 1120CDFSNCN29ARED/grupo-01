@@ -4,23 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../public/css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/b0a3676e9b.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <ul>
+            <ul class="nav-izq">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">compras</a></li>
-                <li><a href="#">Home</a></li>
+                <li><a href="#">Programas</a></li>
+                <li><a href="#">Nosotros</a></li>
             </ul>
-            <img src="" alt="">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Home</a></li>
+            <div class="header-mobile">
+                <i class="fas fa-bars"></i>
+                <h1 id="logo">Job Search Experience</h1>
+                <div class="mobile-icons">
+                    <i class="fas fa-shopping-cart"></i>
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+            <ul class="nav-der">
+                <li><a href="#">Carrito</a></li>
+                <li><a href="#">Ingreso</a></li>
+                <li><a href="#">Registro</a></li>
             </ul>
         </nav>
     </header>
@@ -33,106 +46,123 @@
                 consequuntur? Ratione!
             </p>
         </div>
-        <section>
+        <section class="articles-presentation">
             <h3>lorem ipsum</h3>
             <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, tempora, non perferendis nemo veritatis
                 impedit amet magnam possimus tempore expedita veniam quasi. Consequuntur, earum recusandae nemo
                 voluptatem
                 at qui unde!</p>
-
-            <article>
-                <img src="" alt="">
-                <h3>Titulo 1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia consequuntur nemo eaque aut sit iste
-                    necessitatibus possimus dolor aspernatur odit ab dolores repellat eveniet, fugiat accusantium
-                    suscipit ducimus libero autem!</p>
-                <img src="" alt="">
-                <p class="texto-precio">$3.500</p>
-                <div>
-                    <button><a href="">Comprar</a></button>
-                    <button><i></i><a href="">Agregar al carrito</a></button>
-                </div>
-            </article>
-            <article>
-                <img src="" alt="">
-                <h3>Titulo 2</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia consequuntur nemo eaque aut sit iste
-                    necessitatibus possimus dolor aspernatur odit ab dolores repellat eveniet, fugiat accusantium
-                    suscipit ducimus libero autem!</p>
-                <img src="" alt="">
-                <p class="texto-precio">$3.500</p>
-                <div>
-                    <button><a href="">Comprar</a></button>
-                    <button><i></i><a href="">Agregar al carrito</a></button>
-                </div>
-            </article>
-            <article>
-                <img src="" alt="">
-                <h3>Titulo 3</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia consequuntur nemo eaque aut sit iste
-                    necessitatibus possimus dolor aspernatur odit ab dolores repellat eveniet, fugiat accusantium
-                    suscipit ducimus libero autem!</p>
-                <img src="" alt="">
-                <p class="texto-precio">$3.500</p>
-                <div>
-                    <button><a href="">Comprar</a></button>
-                    <button><i></i><a href="">Agregar al carrito</a></button>
-                </div>
-            </article>
+            <div class="article-group">
+                <article class="article-card card">
+                    <div class="card-background">
+                        <img src="" alt="">
+                    </div>
+                    <h3>Titulo 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia consequuntur nemo eaque aut sit
+                        iste
+                        necessitatibus possimus dolor aspernatur odit</p>
+                    <div class="card-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="card-price">$3.500</p>
+                    <div class="card-buttons">
+                        <button class="card-buy">Comprar</button>
+                        <button class="card-cart"><i class="fas fa-shopping-cart"></i>Agregar</button>
+                    </div>
+                </article>
+                <article class="article-card-2 card">
+                    <div class="card-background">
+                        <img src="" alt="">
+                    </div>
+                    <h3>Titulo 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia consequuntur nemo eaque aut sit
+                        iste
+                        necessitatibus possimus dolor aspernatur odit</p>
+                    <div class="card-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="card-price">$3.500</p>
+                    <div class="card-buttons">
+                        <button class="card-buy">Comprar</button>
+                        <button class="card-cart"><i class="fas fa-shopping-cart"></i>Agregar</button>
+                    </div>
+                </article>
+                <article class="article-card-3 card">
+                    <div class="card-background">
+                        <img src="" alt="">
+                    </div>
+                    <h3>Titulo 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia consequuntur nemo eaque aut sit
+                        iste
+                        necessitatibus possimus dolor aspernatur odit</p>
+                    <div class="card-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="card-price">$3.500</p>
+                    <div class="card-buttons">
+                        <button class="card-buy">Comprar</button>
+                        <button class="card-cart"><i class="fas fa-shopping-cart"></i>Agregar</button>
+                    </div>
+                </article>
+            </div>
         </section>
-        <section>
+        <section class="about-us">
             <h4>Sobre Nosotros</h4>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <h5>Job Search Experience</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta vel ratione error recusandae dolor quia
-                aliquam minima, earum qui, aspernatur quod dicta voluptatum incidunt atque. Similique molestias corrupti
-                est debitis.</p>
+            <div class="about-us-img">
+                <img src="/images/foto-nosotros.png" alt="">
+            </div>
+            <div class="about-us-container">
+                <h5>Job Search Experience</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta vel ratione error recusandae dolor
+                    quia
+                    aliquam minima, earum qui, aspernatur quod dicta voluptatum incidunt atque. Similique molestias
+                    corrupti
+                    est debitis.</p>
+            </div>
         </section>
-        <section>
+        <section class="experiences">
             <h4>Experiencias</h4>
-            <article>
-                <p>Juan</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat deleniti excepturi fuga facilis,
-                    ullam recusandae porro quia neque cum culpa est atque, itaque aliquam quibusdam. Ipsum atque soluta
-                    provident dolorum!</p>
-            </article>
-            <article>
-                <p>Juan</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat deleniti excepturi fuga facilis,
-                    ullam recusandae porro quia neque cum culpa est atque, itaque aliquam quibusdam. Ipsum atque soluta
-                    provident dolorum!</p>
-            </article>
-            <article>
-                <p>Juan</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat deleniti excepturi fuga facilis,
-                    ullam recusandae porro quia neque cum culpa est atque, itaque aliquam quibusdam. Ipsum atque soluta
-                    provident dolorum!</p>
-            </article>
+            <div class="exp-container">
+                <article class="experience-card exp-card">
+                    <p>Juan Hernández</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat deleniti excepturi fuga
+                        facilis,
+                        ullam recusandae porro quia</p>
+                </article>
+                <article class="experience-card-2 exp-card">
+                    <p>Juan Hernández</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat deleniti excepturi fuga
+                        facilis,
+                        ullam recusandae porro quia</p>
+                </article>
+                <article class="experience-card-3 exp-card">
+                    <p>Juan Hernández</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat deleniti excepturi fuga
+                        facilis,
+                        ullam recusandae porro quia</p>
+                </article>
+            </div>
         </section>
     </main>
     <footer>
-        <div>
-            <i><a href=""></a></i>
-            <i><a href=""></a></i>
-            <i><a href=""></a></i>
+        <div class="footer-social">
+            <i class="fab fa-twitter"><a href="https://twitter.com/"></a></i>
+            <i class="fab fa-instagram"><a href="https://www.instagram.com/"></a></i>
+            <i class="fab fa-facebook-f"><a href="https://www.facebook.com/"></a></i>
+            <i class="fab fa-linkedin-in"><a href="https://www.linkedin.com/"></a></i>
         </div>
         <nav>
             <ul class="footer-izq">
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
+                <li><a href=""></a>HOME</li>
+                <li><a href=""></a>PROGRAMAS</li>
+                <li><a href=""></a>NOSOTROS</li>
             </ul>
             <ul class="footer-der">
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
+                <li><a href=""></a>CARRITO</li>
+                <li><a href=""></a>INGRESO</li>
+                <li><a href=""></a>REGISTRO</li>
             </ul>
         </nav>
-        <p>All rights reserverd</p><i></i>
+        <div class="rights">
+            <p>All rights reserverd</p><i class="far fa-copyright"></i>
+        </div>
     </footer>
 </body>
 
