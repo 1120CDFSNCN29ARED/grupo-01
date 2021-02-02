@@ -26,6 +26,10 @@ h6 {
 header {
 	background-color: white;
 	padding: 20px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
 }
 header nav ul {
 	display: none;
@@ -187,9 +191,64 @@ button {
 }
 /* index.html -> LE DI UN MARGIN AL MAIN PARA QUE NO QUEDE TAN PEGADO AL FOOTER */
 main {
+	margin-top: 76px;
 	margin-bottom: 50px;
 }
 /* index.html -> ACÁ TERMINA EL MAIN DEL INDEX.HTML */
+/* register.html -> ACÁ EMPIEZA EL MAIN DEL REGISTER.HTML */
+.register-main h2 {
+	text-align: center;
+	font-size: 21px;
+	padding-top: 50px;
+}
+form input {
+	border-radius: 0;
+	border: none;
+}
+form {
+	width: 80%;
+	margin: auto;
+}
+form div {
+	margin: auto;
+	border-bottom: 1px solid black;
+	padding-top: 20px;
+}
+form div i {
+	padding: 10px;
+	padding-right: 20px;
+}
+.register-btn {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	max-width: 350px;
+}
+.login-btn {
+	width: 65%;
+	max-width: 350px;
+}
+.register-icons {
+	width: 70%;
+	max-width: 400px;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	margin: auto;
+}
+.register-opt {
+	text-align: center;
+}
+.register-opt div i {
+	border: 1px solid #8cc0d6;
+	border-radius: 50%;
+	width: 75px;
+	height: 75px;
+	padding: 15px;
+	font-size: 45px;
+}
+.register-opt .fa-facebook-f {
+	padding-left: 15px;
+}
 /* FOOTER */
 footer {
 	background-color: #707070;
@@ -243,6 +302,7 @@ footer nav {
 	}
 	header {
 		padding: 10px 20px;
+		position: initial;
 	}
 	header nav {
 		display: flex;
@@ -271,7 +331,14 @@ footer nav {
 		color: black;
 		text-decoration: none;
 	}
+	header nav ul li a:link {
+		color: black;
+		text-decoration: none;
+	}
 	/* index.html -> ARRANCA EL MAIN */
+	main {
+		margin-top: 0px;
+	}
 	/* index.html ->  SECCION DONDE VA VIDEO */
 	.video-container h2 {
 		font-size: 30px;
@@ -339,6 +406,13 @@ footer nav {
 		max-width: 350px;
 		margin: initial;
 	}
+	/* register.html -> ARRANCA MAIN DEL REGISTER.HTML */
+	.register-main form {
+		max-width: 615px;
+	}
+	.register-icons {
+		max-width: 400px;
+	}
 	/*FOOTER*/
 	.footer-social {
 		width: 30%;
@@ -356,6 +430,7 @@ footer nav {
 /* MEDIA QUERY PARA DESKTOP */
 
 @media (min-width: 1220px) {
+	/* index.html -> ARRANCA INDEX.HTML*/
 	/* index.html -> SECCION DE TARJETAS*/
 	.card {
 		min-width: 365px;
@@ -396,5 +471,13 @@ footer nav {
 		width: 35%;
 		float: left;
 		padding-right: 10px;
+	}
+	/* register.html -> ARRANCA REGISTER.HTML*/
+	.register-btn {
+		width: 80%;
+		display: block;
+	}
+	.login-btn {
+		display: block;
 	}
 }
