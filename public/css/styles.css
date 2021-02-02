@@ -47,8 +47,8 @@ header nav ul {
 	align-items: center;
 }
 
-/* ACÁ ARRANCA EL MAIN, TODO LO DE ACA ADENTRO PERTENECE AL INDEX.HTML */
-/* SECCIÓN DONDE VA VIDEO  */
+/* index.html -> ACÁ ARRANCA EL MAIN, TODO LO DE ACA ADENTRO PERTENECE AL INDEX.HTML */
+/* index.html -> SECCIÓN DONDE VA VIDEO  */
 .video-container {
 	background-color: #8cc0d6;
 	height: 100vh;
@@ -66,7 +66,7 @@ header nav ul {
 	bottom: -10px;
 	padding: 20px;
 }
-/*  SECCIÓN DE CARTAS, solo una por el momento en mobile, hasta que veamos como hacer lo del swipe*/
+/* index.html ->  SECCIÓN DE CARTAS, solo una por el momento en mobile, hasta que veamos como hacer lo del swipe*/
 .articles-presentation h3:first-child {
 	margin: 20px;
 }
@@ -144,7 +144,7 @@ button {
 	display: none;
 }
 
-/* SECCIÓN SOBRE NOSOTROS, por el momento con una sola imagen*/
+/* index.html -> SECCIÓN SOBRE NOSOTROS, por el momento con una sola imagen*/
 .about-us {
 	text-align: center;
 }
@@ -159,7 +159,7 @@ button {
 .about-us p {
 	margin: 15px;
 }
-/* SECCIÓN DE COMENTARIOS, por el momento con solo uno en mobile hasta ver como hacer el swipe */
+/* index.html -> SECCIÓN DE COMENTARIOS, por el momento con solo uno en mobile hasta ver como hacer el swipe */
 .experiences {
 	text-align: center;
 }
@@ -185,12 +185,12 @@ button {
 	text-align: left;
 	padding: 5px;
 }
-/* LE DI UN MARGIN AL MAIN PARA QUE NO QUEDE TAN PEGADO AL FOOTER */
+/* index.html -> LE DI UN MARGIN AL MAIN PARA QUE NO QUEDE TAN PEGADO AL FOOTER */
 main {
 	margin-bottom: 50px;
 }
-/* ACÁ TERMINA EL MAIN DEL INDEX.HTML */
-/* SECCIÓN DEL FOOTER */
+/* index.html -> ACÁ TERMINA EL MAIN DEL INDEX.HTML */
+/* FOOTER */
 footer {
 	background-color: #707070;
 	padding-bottom: 1px;
@@ -236,7 +236,7 @@ footer nav {
 /* MEDIA QUERY PARA TABLET */
 
 @media (min-width: 769px) {
-	/*HEADER*/
+	/* HEADER */
 	i.fas.fa-bars,
 	.mobile-icons {
 		display: none;
@@ -271,12 +271,12 @@ footer nav {
 		color: black;
 		text-decoration: none;
 	}
-	/* ARRANCA EL MAIN */
-	/* SECCION DONDE VA VIDEO */
+	/* index.html -> ARRANCA EL MAIN */
+	/* index.html ->  SECCION DONDE VA VIDEO */
 	.video-container h2 {
 		font-size: 30px;
 	}
-	/* SECCION DE CARTAS */
+	/* index.html -> SECCION DE CARTAS */
 	.articles-presentation {
 		text-align: center;
 	}
@@ -306,7 +306,7 @@ footer nav {
 		font-size: 40px;
 	}
 
-	/* SECCION SOBRE NOSOTROS*/
+	/* index.html -> SECCION SOBRE NOSOTROS*/
 	.about-us h4 {
 		text-transform: uppercase;
 		font-size: 35px;
@@ -320,7 +320,7 @@ footer nav {
 		font-weight: 700;
 		font-size: 25px;
 	}
-	/* SECCION EXPERIENCIAS */
+	/* index.html -> SECCION EXPERIENCIAS */
 
 	.exp-container {
 		display: flex;
@@ -356,7 +356,7 @@ footer nav {
 /* MEDIA QUERY PARA DESKTOP */
 
 @media (min-width: 1220px) {
-	/* SECCION DE TARJETAS*/
+	/* index.html -> SECCION DE TARJETAS*/
 	.card {
 		min-width: 365px;
 		max-width: 25vw;
@@ -370,7 +370,7 @@ footer nav {
 		width: 45%;
 	}
 
-	/* SECCION SOBRE NOSOTROS */
+	/* index.html -> SECCION SOBRE NOSOTROS */
 	.about-us {
 		height: 300px;
 	}
