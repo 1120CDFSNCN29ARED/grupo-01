@@ -34,3 +34,6 @@ De este sitio tomamos inspiración para plantear la idea de un video sin sonido 
 5. https://www.lynda.com/
 
 En lynda encontramos interesante nuevamente las "cards" para mostrar nuestros servicios y también los reviews/experiencias de usuarios al final del sitio.
+
+Tablero de trello:
+https://trello.com/b/CwG6OihD/tablero-e-commerce
