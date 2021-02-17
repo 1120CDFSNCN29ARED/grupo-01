@@ -40,6 +40,7 @@ header nav ul {
 	position: absolute;
 	font-size: 20px;
 }
+
 .mobile-icons {
 	position: absolute;
 	right: 7px;
@@ -47,6 +48,11 @@ header nav ul {
 .mobile-icons i {
 	padding-right: 10px;
 	font-size: 20px;
+	color: black;
+}
+.mobile-icons a:visited {
+	text-decoration: none;
+	color: black;
 }
 .header-mobile {
 	display: flex;
@@ -382,6 +388,29 @@ form div i {
 	display: flex;
 	justify-content: space-evenly;
 }
+/* productDetail.html -> TERMINA MAIN DE PRODUCTDETAIL.HTML*/
+/* addProduct.html -> ARRANCA MAIN DE ADDPRODUCT.HTML*/
+.add-product label {
+	display: block;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	padding-bottom: 20px;
+}
+.add-product input {
+	border: 1px solid gray;
+	width: 100%;
+	height: 150px;
+}
+.add-product {
+	border-bottom: none;
+}
+.add-price input,
+.add-img input {
+	height: 50px !important;
+}
+.edit-product {
+	width: 80%;
+}
 /* FOOTER */
 footer {
 	background-color: #707070;
@@ -396,9 +425,14 @@ footer {
 }
 .footer-social i {
 	font-size: 30px;
+	color: white;
 }
 footer nav ul li {
 	list-style-type: none;
+}
+footer nav ul li a {
+	color: white;
+	text-decoration: none;
 }
 .rights {
 	display: flex;
@@ -460,6 +494,7 @@ footer nav {
 		text-decoration: none;
 		text-transform: uppercase;
 	}
+
 	header nav ul li a:visited {
 		color: black;
 		text-decoration: none;
@@ -796,5 +831,9 @@ footer nav {
 		border-top-left-radius: 10px;
 		border-top-right-radius: 10px;
 		height: 140px;
+	}
+	/* addproduct.html -> ARRANCA EL ADDPRODUCT.HTML*/
+	.edit-product {
+		width: 100%;
 	}
 }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("../partials/head.ejs") %>
+</head>
+
+<body>
+    <header>
+        <%- include("../partials/header.ejs") %>
+    </header>
+    <main class="register-main">
+        <h2>Registro</h2>
+        <form action="GET">
+            <div>
+                <i class="fas fa-user"></i><input type="text" name="usuario" id="usuario" placeholder="Jose Hernández">
+            </div>
+            <div>
+                <i class="fas fa-envelope"></i><input type="email" name="email" id="contraseña"
+                    placeholder="tuemail@email.com">
+            </div>
+            <div>
+                <i class="fas fa-lock"></i><input type="password" name="contraseña" id="contraseña"
+                    placeholder="********">
+            </div>
+            <button class="card-buy register-btn">Registrarse</button>
+        </form>
+        <section class="register-opt">
+            <p>O regístrate con una de las siguientes:</p>
+            <div class="register-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-google-plus-g"></i>
+            </div>
+            <p>Ya tienes una cuenta?</p>
+            <button class="card-cart login-btn">Iniciar Sesion</button>
+        </section>
+    </main>
+    <footer>
+        <%- include("../partials/footer.ejs") %>
+    </footer>
+</body>
+
+</html>
