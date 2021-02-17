@@ -26,7 +26,3 @@ const userRouter = require("./routers/userRouter");
 
 app.get("/register", userRouter);
 app.get("/login", userRouter);
-
-app.get("/addProduct", (req, res) => {
-	res.render(path.resolve(__dirname, "./views/products/addProduct.ejs"));
-});
