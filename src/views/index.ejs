@@ -18,6 +18,14 @@
                 consequuntur? Ratione!
             </p>
         </div>
+
+        <% for (let i = 0; i < 3; i++) {
+            const prod = products[i]; %>
+
+
+
+        <% } %>
+
         <section class="articles-presentation" id="programs">
             <h3>lorem ipsum</h3>
             <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, tempora, non perferendis nemo veritatis
@@ -25,57 +33,28 @@
                 voluptatem
                 at qui unde!</p>
             <div class="article-group">
-                <article class="article-card card">
+                <% for (let i = 0; i < 3; i++) {
+            const prod = products[i]; %>
+
+                <article class="article-card-<%=[i] %> card">
                     <div class="card-background">
                         <img src="" alt="">
                     </div>
-                    <h3>Titulo 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia consequuntur nemo eaque aut sit
-                        iste
-                        necessitatibus possimus dolor aspernatur odit</p>
+                    <h3><%= prod.name %></h3>
+                    <p><%= prod.shortDescription %></p>
                     <div class="card-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                             class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p class="card-price">$3.500</p>
-                    <a href="/productDetail" class="more-info"><i class="fas fa-info-circle"></i>Más información</a>
+                    <p class="card-price">$ <%= prod.price %></p>
+                    <a href="/productDetail/<%= prod.id %>" class="more-info"><i class="fas fa-info-circle"></i>Más
+                        información</a>
                     <div class="card-buttons">
                         <button class="card-buy">Comprar</button>
                         <button class="card-cart"><i class="fas fa-shopping-cart"></i>Agregar</button>
                     </div>
                 </article>
-                <article class="article-card-2 card">
-                    <div class="card-background">
-                        <img src="" alt="">
-                    </div>
-                    <h3>Titulo 2</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia consequuntur nemo eaque aut sit
-                        iste
-                        necessitatibus possimus dolor aspernatur odit</p>
-                    <div class="card-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p class="card-price">$3.500</p>
-                    <a href="/productDetail" class="more-info"><i class="fas fa-info-circle"></i>Más información</a>
-                    <div class="card-buttons">
-                        <button class="card-buy">Comprar</button>
-                        <button class="card-cart"><i class="fas fa-shopping-cart"></i>Agregar</button>
-                    </div>
-                </article>
-                <article class="article-card-3 card">
-                    <div class="card-background">
-                        <img src="" alt="">
-                    </div>
-                    <h3>Titulo 3</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia consequuntur nemo eaque aut sit
-                        iste
-                        necessitatibus possimus dolor aspernatur odit</p>
-                    <div class="card-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p class="card-price">$3.500</p>
-                    <a href="/productDetail" class="more-info"><i class="fas fa-info-circle"></i>Más información</a>
-                    <div class="card-buttons">
-                        <button class="card-buy">Comprar</button>
-                        <button class="card-cart"><i class="fas fa-shopping-cart"></i>Agregar</button>
-                    </div>
-                </article>
+
+                <% } %>
+
             </div>
         </section>
         <section class="about-us">

@@ -15,16 +15,15 @@
             <img src="/images/video-img.png" alt="">
         </div>
         <section class="desktop-product">
-            <h3>Lorem Ipsum</h3>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-                et dolore magna.
+            <h3><%= product.name %></h3>
+            <p><%= product.shortDescription %>
             </p>
             <div class="card-rating stars-product"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                     class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
             </div>
-            <p>Creado por <span> Juan Garcia Rodríguez</span></p>
+            <p>Creado por <span> <%= product.createdBy %></span></p>
             <p><i class="fas fa-globe"></i>Español / Inglés</p>
-            <p class="product-price">$ 3.500 ARS</p>
+            <p class="product-price">$ <%= product.price %></p>
             <div class="card-buttons product-mobile-btn">
                 <button class="card-buy">Comprar</button>
                 <button class="card-cart"><i class="fas fa-shopping-cart"></i>Agregar</button>
@@ -35,13 +34,14 @@
                 <img src="" alt="">
             </div>
             <div class="sticky-info-container">
-                <p class="sticky-price">$ 3.500 ARS</p>
+                <p class="sticky-price">$ <%= product.price %></p>
                 <div class="card-buttons sticky-buttons">
                     <button class="card-buy sticky-buttons-block">Comprar</button>
                     <button class="card-cart sticky-buttons-block"><i class="fas fa-shopping-cart"></i>Agregar</button>
                 </div>
                 <div>
                     <h4>Este programa incluye:</h4>
+                    <p><%= product.program %></p>
                     <ul class="sticky-ticks">
                         <li>
                             <div class="tick-list">
@@ -75,6 +75,7 @@
         <section class="product-info">
             <article class="product-what-for">
                 <h4>Para que te sirve este curso?</h4>
+                <p><%= product.whatFor %></p>
                 <div class="tick-desktop">
                     <ul class="left-what-for">
                         <li>
@@ -103,6 +104,7 @@
                         </li>
                     </ul>
                     <ul class="right-what-for">
+                        <p><%= product.whatFor %></p>
                         <li>
                             <div class="tick-list">
                                 <i class="fas fa-check"></i>
@@ -132,7 +134,7 @@
             </article>
             <article>
                 <h4>Contenidos del curso</h4>
-
+                <p><%= product.content %></p>
                 <div class="content-mobile">
                     <p>X secciones - X cantidad de clases - 37 h 32 m de duración total
                     </p>

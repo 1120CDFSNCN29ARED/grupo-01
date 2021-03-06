@@ -11,46 +11,50 @@
     </header>
     <main class="register-main">
         <h2>Agregar/Editar productos</h2>
-        <form action="/productDetail" method="POST">
+        <form action="/productDetail/<%= product.id %>?_method=PUT" method="POST">
             <div class="add-product">
                 <label for="">Nombre del curso</label>
-                <input type="text" name="name" id="name">
+                <input type="text" name="name" id="name" value="<%= product.name %>">
             </div>
             <div class="add-product">
                 <label for="">Creado por</label>
-                <input type="text" name="createdBy" id="createdBy">
+                <input type="text" name="createdBy" id="createdBy" value="<%= product.createdBy %>">
             </div>
             <div class="add-product">
                 <label for="">Breve descripción del curso</label>
-                <input type="text" name="shortDescription" id="shortDescription">
+                <input type="text" name="shortDescription" id="shortDescription"
+                    value="<%= product.shortDescription %>">
             </div>
             <div class="add-product add-img">
                 <label for="">Fotos del curso</label>
-                <input type="file" name="image" accept=".jpg, .png" id="image">
+                <input type="file" name="image" accept=".jpg, .png" id="image" value="<%= product.image %>">
             </div>
             <div class="add-product">
                 <label for="">Para que sirve este curso?</label>
-                <input type="text" name="whatFor" id="whatFor">
+                <input type="text" name="whatFor" id="whatFor" value="<%= product.whatFor %>">
             </div>
             <div class="add-product">
                 <label for="">Contenidos del curso</label>
-                <input type="text" name="content" id="content">
+                <input type="text" name="content" id="content" value="<%= product.content %>">
             </div>
             <div class="add-product">
                 <label for="">Descripción detallada del curso</label>
-                <input type="text" name="description" id="description">
+                <input type="text" name="description" id="description" value="<%= product.description %>">
             </div>
             <div class="add-product">
                 <label for="">El programa incluye:</label>
-                <input type="text" name="program" id="program">
+                <input type="text" name="program" id="program" value="<%= product.program %>">
             </div>
             <div class="add-product add-price">
                 <label for="">Precio del curso:</label>
-                <input type="text" name="price" id="price">
+                <input type="text" name="price" id="price" value="<%= product.price %>">
             </div>
+            <button type="submit" class="card-cart login-btn edit-product">Editar</button>
+        </form>
+        <form action="/productDetail/<%= product.id %>?_method=DELETE" method="POST">
 
-            <button type="submit" class="card-buy register-btn">Agregar</button>
-            <button class="card-cart login-btn edit-product">Editar</button>
+            <button type="submit" class="card-cart login-btn edit-product delete-product">Eliminar</button>
+
         </form>
 
 

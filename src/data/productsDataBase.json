@@ -1,0 +1,37 @@
+[
+	{
+		"id": 1,
+		"name": "Entrenamiento para entrevistas laborales",
+		"price": 4.499,
+		"createdBy": "Guillermo Duran",
+		"shortDescription": "Te entrenamos para ser efectivo en una entrevista laboral y lograr ser seleccionado por RRHH",
+		"whatFor": "Generar el ser seleccionado entre los candidatos para pasar a la instancia siguiente en el proceso de selección de personal para ocupar el puesto requerido",
+		"content": "Realizamos diversas entrevistas personales para entrenarte en los aspectos relevantes a demostrar en una entrevista de trabajo",
+		"program": "Sesiones de entrenamiento personalizado en la que te formamos para que respondas de manera profesional y efectiva en las diferentes situaciones que se te presenten en una entrevista laboral",
+		"image": "X",
+		"description": ""
+	},
+	{
+		"id": 2,
+		"name": "Diseño de CV efectivo",
+		"price": 3.499,
+		"createdBy": "Carlos Curi",
+		"shortDescription": "Diseñamos tu CV a medida, para lograr ser seleccionado por RRHH",
+		"whatFor": "Generar el ser seleccionado entre los candidatos para pasar a la instancia siguiente en el proceso de selección",
+		"content": "Realizamos una entrevista personal para determinar los aspectos relevantes a incluir y desarrollamos tu CV",
+		"program": "Entrevista personal donde abordamos tu formación, conocimientos y experiencias, para así desarrollar tu CV de forma profesional y efectiva",
+		"image": "X",
+		"description": ""
+	},
+	{
+		"id": 3,
+		"name": "Negociación de incremento salarial",
+		"price": 4.999,
+		"createdBy": "Javier Espigares",
+		"shortDescription": "Te entrenamos para ser efectivo en la negociación de tu incremento de sueldo",
+		"whatFor": "Obtener un aumento de sueldo",
+		"content": "Desarrollamos rol plays en los que te entrenamos para ser efectivo en una negociación salarial con tu jefe directo",
+		"program": "Sesiones de entrenamiento personalizado para transitar de manera profesional y efectiva la negociación de un incremento salarial para tu posición y ante tu superior directo",
+		"image": "X"
+	}
+]

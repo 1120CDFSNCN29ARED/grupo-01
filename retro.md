@@ -13,3 +13,11 @@ Retrospectiva Sprint 3
 ⦁ Start doing: coordinar planificación al recibir la información del sprint
 ⦁ Stop doing: -
 ⦁ Less of: profundizar en los temas no relevantes al sprint
+
+Retrospectiva Sprint 4
+
+⦁ Keep doing: llegar a las reuniones con los temas estudiados
+⦁ More of: trabajar el contenido de los productos del sitio
+⦁ Start doing: coordinar reuniones de equipo al recibir la información del sprint
+⦁ Stop doing: -
+⦁ Less of: concentrar el trabajo sobre el final del sprint
