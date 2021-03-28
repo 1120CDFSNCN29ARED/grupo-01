@@ -8,6 +8,7 @@ let homeController = {
 		const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
 		res.render(path.resolve(__dirname, "../views/index.ejs"), {
 			products,
+			user: req.session.userLogged,
 		});
 	},
 };

@@ -6,10 +6,14 @@ const productsFilePath = path.join(__dirname, "../data/productsDataBase.json");
 
 let productController = {
 	cart: function (req, res) {
-		res.render(path.resolve(__dirname, "../views/products/productCart.ejs"));
+		res.render(path.resolve(__dirname, "../views/products/productCart.ejs"), {
+			user: req.session.userLogged,
+		});
 	},
 	add: function (req, res) {
-		res.render(path.resolve(__dirname, "../views/products/addProduct.ejs"));
+		res.render(path.resolve(__dirname, "../views/products/addProduct.ejs"), {
+			user: req.session.userLogged,
+		});
 	},
 	detail: (req, res) => {
 		const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
@@ -20,6 +24,7 @@ let productController = {
 
 		res.render(path.resolve(__dirname, "../views/products/productDetail.ejs"), {
 			product,
+			user: req.session.userLogged,
 		});
 	},
 	store: (req, res) => {
@@ -35,11 +40,12 @@ let productController = {
 			content: req.body.content,
 			description: req.body.description,
 			program: req.body.program,
+			image: req.file.filename,
 		};
 
 		products.push(newProduct);
 
-		fs.writeFileSync(productsFilePath, JSON.stringify(products));
+		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 4));
 		res.redirect("/");
 	},
 	edit: (req, res) => {
@@ -51,6 +57,7 @@ let productController = {
 
 		res.render(path.resolve(__dirname, "../views/products/editProduct.ejs"), {
 			product,
+			user: req.session.userLogged,
 		});
 	},
 	update: (req, res) => {

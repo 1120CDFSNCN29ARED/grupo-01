@@ -11,19 +11,24 @@
     </header>
     <main class="register-main">
         <h2>Inicia Sesión</h2>
-        <form action="GET">
-            <div>
+        <form method="POST" action="/user/login" enctype="multipart/form-data">
+            <!-- <div>
                 <i class="fas fa-user"></i><input type="text" name="usuario" id="usuario" placeholder="Jose Hernández">
-            </div>
+            </div> -->
             <div>
-                <i class="fas fa-envelope"></i><input type="email" name="email" id="contraseña"
+                <i class="fas fa-envelope"></i><input type="email" name="email" id="email"
                     placeholder="tuemail@email.com">
             </div>
-            <div>
-                <i class="fas fa-lock"></i><input type="password" name="contraseña" id="contraseña"
-                    placeholder="********">
+            <% if (locals.errors && errors.email) { %>
+            <div class="text-danger">
+                <%= errors.email.msg %>
             </div>
-            <button class="card-buy register-btn">Iniciar Sesion</button>
+            <% } %>
+            <div>
+                <i class="fas fa-lock"></i><input type="password" name="password" id="password" placeholder="********">
+            </div>
+            <input type="checkbox" name="remember_user"> Recordar mi usuario
+            <button type="submit" class="card-buy register-btn">Iniciar Sesión</button>
         </form>
         <section class="register-opt">
             <p>O ingresa con una de las siguientes:</p>
@@ -33,7 +38,7 @@
                 <i class="fab fa-google-plus-g"></i>
             </div>
             <p>No tienes una cuenta?</p>
-            <button class="card-cart login-btn">Registrarse</button>
+            <button onclick="location.href='/user/register'" class="card-cart login-btn">Registrarse</button>
         </section>
     </main>
     <footer>

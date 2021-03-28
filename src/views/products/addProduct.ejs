@@ -11,42 +11,42 @@
     </header>
     <main class="register-main">
         <h2>Agregar/Editar productos</h2>
-        <form action="/productDetail" method="POST">
+        <form action="/productDetail" method="POST" enctype="multipart/form-data">
             <div class="add-product">
                 <label for="">Nombre del curso</label>
-                <input type="text" name="name" id="name">
+                <input type="text" name="name" id="name" required>
             </div>
             <div class="add-product">
                 <label for="">Creado por</label>
-                <input type="text" name="createdBy" id="createdBy">
+                <input type="text" name="createdBy" id="createdBy" required>
             </div>
             <div class="add-product">
                 <label for="">Breve descripción del curso</label>
-                <input type="text" name="shortDescription" id="shortDescription">
+                <input type="text" name="shortDescription" id="shortDescription" required>
             </div>
             <div class="add-product add-img">
                 <label for="">Fotos del curso</label>
-                <input type="file" name="image" accept=".jpg, .png" id="image">
+                <input type="file" name="image" accept=".jpg, .png" id="image" required>
             </div>
             <div class="add-product">
                 <label for="">Para que sirve este curso?</label>
-                <input type="text" name="whatFor" id="whatFor">
+                <input type="text" name="whatFor" id="whatFor" required>
             </div>
             <div class="add-product">
                 <label for="">Contenidos del curso</label>
-                <input type="text" name="content" id="content">
+                <input type="text" name="content" id="content" required>
             </div>
             <div class="add-product">
                 <label for="">Descripción detallada del curso</label>
-                <input type="text" name="description" id="description">
+                <input type="text" name="description" id="description" required>
             </div>
             <div class="add-product">
                 <label for="">El programa incluye:</label>
-                <input type="text" name="program" id="program">
+                <input type="text" name="program" id="program" required>
             </div>
             <div class="add-product add-price">
                 <label for="">Precio del curso:</label>
-                <input type="text" name="price" id="price">
+                <input type="text" name="price" id="price" required>
             </div>
 
             <button type="submit" class="card-buy register-btn">Agregar</button>

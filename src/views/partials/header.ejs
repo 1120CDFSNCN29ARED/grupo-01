@@ -9,14 +9,39 @@
         <a href="/" style="margin: auto;">
             <h1 id="logo">Job Search Experience</h1>
         </a>
+
+        <% if (locals.isLogged) { %>
         <div class="mobile-icons">
-            <a href="/productCart"><i class="fas fa-shopping-cart"></i></a>
-            <a href="/login"><i class="fas fa-user"></i></a>
+            <a href="/productDetail/productCart"><i class="fas fa-shopping-cart"></i></a>
+            <a href="/user/profile"><img src="/images/users/<%=user.profile_image%>" alt="" width="24.5" height="24.5"
+                    style="border-radius: 100%; vertical-align: middle; margin-bottom: 5px;"></a>
         </div>
+        <% } else {  %>
+        <div class="mobile-icons">
+            <a href="/productDetail/productCart"><i class="fas fa-shopping-cart"></i></a>
+            <a href="/user/login"><i class="fas fa-user"></i></a>
+        </div>
+        <%  }  %>
+
+
+        <!-- <div class="mobile-icons">
+            <a href="/productDetail/productCart"><i class="fas fa-shopping-cart"></i></a>
+            <a href="/user/login"><i class="fas fa-user"></i></a>
+        </div>
+ -->
+
     </div>
+    <% if (locals.isLogged) { %>
+    <ul class="nav-der">
+        <li><a href="/productDetail/productCart">Carrito</a></li>
+        <li><a href="/user/profile">Perfil</a></li>
+        <li><a href="#">?????</a></li>
+    </ul>
+    <% } else {  %>
     <ul class="nav-der">
         <li><a href="/productDetail/productCart">Carrito</a></li>
         <li><a href="/user/login">Ingreso</a></li>
         <li><a href="/user/register">Registro</a></li>
     </ul>
+    <%  }  %>
 </nav>
